@@ -1,0 +1,29 @@
+{
+  "name": "latticejs",
+  "version": "0.0.0",
+  "description": "Library for n-dimensional lattices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qacwnfq/latticeJS.git"
+  },
+  "keywords": [
+    "lattice",
+    "grid",
+    "periodic",
+    "n-dimensions"
+  ],
+  "author": "Fredrik J <fredrik.jadebeck@gmail.com> (https://github.com/qacwnfq)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qacwnfq/latticeJS/issues"
+  },
+  "homepage": "https://github.com/qacwnfq/latticeJS#readme",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
+}
