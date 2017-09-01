@@ -25,9 +25,8 @@ describe( '#latticejs', () => {
    it( 'should create a periodic 2d lattice', () => {
       const periodicLattice1d = new lattice( { dims: [ 3, 2 ] }, { periodic: true } );
       expect( periodicLattice1d.periodic ).to.equal( true );
-      periodicLattice1d.set( 1, 1 );
-      expect( periodicLattice1d.point( 3 ) ).to.equal( periodicLattice1d.point( 0 ) );
-      expect( periodicLattice1d.point( 4 ) ).to.equal( periodicLattice1d.point( 1 ) );
+      periodicLattice1d.set( 1, [ 0, 1 ] );
+      expect( periodicLattice1d.point( [ 3, 3 ] ) ).to.equal( periodicLattice1d.point( [ 0, 1 ] ) );
    } );
 
    it( 'should correctly calculate needed size for given parameters', () => {
